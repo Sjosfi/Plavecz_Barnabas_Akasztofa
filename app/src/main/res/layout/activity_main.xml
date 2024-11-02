@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70mm"
+            android:src="@drawable/akasztofa00"
+            android:id="@+id/akasztokep">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8mm"
+            android:text="Kitalalando"
+            android:id="@+id/kitalalando"
+            android:layout_below="@id/akasztokep"
+            android:layout_centerInParent="true"
+            >
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/kitalalando"
+            android:id="@+id/betusor"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/minuszgomb">
+
+            </Button>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a"
+                android:textSize="10mm"
+                android:id="@+id/betuk">
+
+            </TextView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/pluszgomb">
+
+            </Button>
+
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="8mm"
+        android:text="Tippel"
+        android:layout_below="@id/betusor"
+        android:id="@+id/tippelgomb">
+
+
+    </Button>
+
+</RelativeLayout>
